@@ -1,0 +1,45 @@
+<html>
+    <head>
+	<meta content='width=device-width; user-scalable=0;' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>
+            Zapovesti
+        </title>
+    </head>
+    <body>
+    <header>
+         <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Najnovije</li>
+                </a>
+                <a onclick="zapovesti()">
+                    <li>Zapovesti zapovest</li>
+                </a>
+            
+            
+            </ul>
+        </nav>
+       <div id="logodiv">
+           <img src="logo.png" alt="Zapovesti">
+           <h2>Zapovesti svoju zapovest</h2>
+           
+       </div>
+    </header>
+    <div id="zapovestizap" style="max-height: 0px;">
+        <a id="otkazi" onclick="zapovesti()">x</a>
+	<form action="https://docs.google.com/forms/d/e/1FAIpQLSeuPqdppNOgcGgYifhDRw5FRTdt2YLjz_neapL3UL9_eqXSaA/formResponse"  target="dummy" method="POST" onsubmit="alert('Uspešno zapoveđeno!');setTimeout(function(){location.reload(true);}, 1000);">
+	<h2>Ostavi zapovest:</h2>
+		<input name="entry.1294861348" oninput="checkSend();" placeholder="Nadimak" id="nadimak"/>
+		<textarea name="entry.1646991616" placeholder="Zapovest" oninput="numLet(); checkSend();" id="zaptext"></textarea>
+		<label name="brslova">0/255</label>
+		<button id="saljizap">Zapovesti!</button>
+	</form>
+	<iframe name="dummy" style="display:none"></iframe>
+    </div>
+    </body>
+    <script src="func.js"></script>
+    <script src="https://spreadsheets.google.com/feeds/cells/13m3N6k39ynidSU_cIDIKtkm0A63WUwuspBh8FUS2FaI/1/public/basic?alt=json-in-script&callback=JSON_CALLBACK"></script>
+</html>

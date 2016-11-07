@@ -1,0 +1,184 @@
+header
+{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: auto;
+    width: 100%;
+    color: #eeeeee;
+    background-color:rgba(0,0,0,0.3);
+    font-variant: small-caps;
+}
+
+body 
+{
+    background: radial-gradient(#000080, #333333, #DA70D6);
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: lighter;
+    width:100%;
+    height:100%;
+    
+}
+h2
+{
+   font-weight: lighter; 
+}
+article
+{
+    /*background-color: cadetblue;*/
+    background-color:rgba(0,0,0,0.5);
+    color: deeppink;
+    font-family: sans-serif;
+    width:60%;
+    margin:20px auto;
+    padding:10px;
+    min-height: 100px;
+    font-size: 1.5em;
+}
+article span
+{
+    display:block;
+    border-bottom:1px solid;
+    margin-bottom:10px;
+    font-size: 16px;
+    
+}
+
+
+nav
+{
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-bottom: 5px;
+    background-color: cadetblue;
+}
+nav ul
+{
+    margin:0;
+    padding: 4px;
+    padding-left:0;
+}
+nav li
+{
+    margin: 0;
+    list-style: none;
+    width:auto;
+    display: inline;
+    border-right: 1px solid #eeeeee;
+    padding:8px;
+    margin-right: -4px;
+}
+nav li:hover
+{
+    background-color:rgba(0,0,0,0.5);
+    cursor:pointer;
+}
+nav a
+{
+    text-decoration: none;
+    color:#eeeeee;
+}
+#logodiv
+{
+    text-align: center;
+}
+#logodiv img 
+{
+    height:60px;
+}
+input, textarea, button,label
+{
+    width:60%;
+    margin: 10px auto;   
+    display: block;
+}
+textarea
+{
+    max-height: 100px;
+    height: 100px;
+    resize: none;
+}
+button
+{
+    color:white;
+    background-color:cadetblue;
+    border:1px solid;
+    border-radius: 10px;
+    padding:5px;
+}
+
+button[disabled]
+{
+	background-color:dimgray;
+	opacity:0.5;
+}
+button[disabled]:hover
+{
+	cursor:default;	
+}
+button:hover
+{
+    background-color:dimgray;
+    cursor:pointer;
+}
+#zapovestizap
+{
+    position:fixed;
+    width:100%;
+    background-color:rgba(0,0,0,0.5);
+    bottom:0px;
+    left:0px;
+    color:white;
+    overflow: hidden;
+    transition:max-height 0.5s linear;
+}
+#zapovestizap h2
+{
+    padding-top:10px;
+    width:60%;
+    margin:0 auto;
+}
+#otkazi
+{
+    background-color: red;
+    position: absolute;
+    top: 5px;
+    right: 19%;
+    padding: 3px 8px;
+    font-weight: 800;
+    border-radius: 100px;
+    border:2px solid white;
+}
+#otkazi:hover
+{
+    background-color:darkred;
+    cursor:pointer;
+}
+@media only screen and (max-width: 1024px) 
+{
+	html, body
+	{
+	overflow-x:hidden;
+	}
+	body
+	{
+	position: relative
+	}
+	article
+	{
+	width:90%;
+	}
+	nav,#zapovestizap h2,input,textarea,button,label,#otkazi
+	{
+	font-size:18px;
+	}
+	#zapovestizap h2,input,textarea,button,label
+	{
+	width:90%;
+	}
+	#otkazi
+	{
+	right:5%;
+	padding:3px 15px;
+	}
+}
